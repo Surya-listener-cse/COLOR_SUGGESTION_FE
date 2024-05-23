@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Germania+One&display=swap');
+/* font-family: "Germania One", system-ui; */
+
+
+
+/* signup page  */
+
+
+.signUp_page{
+    background-image: url('https://getwallpapers.com/wallpaper/full/a/9/8/689117-rainy-backgrounds-1920x1080-ipad-retina.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Germania One", system-ui;
+    color: white;
+}
+
+.right_bar_auth{
+    height: 500px;
+    box-shadow: 2px 2px 5px grey;
+    width: 400px;
+    border-radius: 50px 50px 50px 50px;
+    backdrop-filter: blur(30px);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-around  ;
+}
+.right_bar_auth>p{
+    text-align: center;
+    font-size: 15px;
+}
+.right_bar_auth>h4{
+    text-align: center;
+}
+.right_bar_auth>form>input{
+    height: 40px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color:transparent;
+    color: white;
+    font-size: medium;
+}
+.right_bar_auth>form>input:hover{
+    box-shadow: 0px 0px 10px;
+   
+}
+.right_bar_auth>form>button{
+    margin-top: 30px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    color: orangered;
+    font-weight: 600;
+}
+.right_bar_auth>form>button:hover{
+    box-shadow: 0px 0px 10px orangered;
+}
+.right_bar_auth>h6>span{
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: 0.7;
+}
+.right_bar_auth>h6>span:hover{
+    opacity: 1;
+}
+.right_bar_auth>form{
+    display: flex;
+    flex-direction: column;
+}
+.right_bar_auth>form>h6{
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.password_icon{
+    opacity: 0.5;
+}
+.password_icon{
+    display: flex;
+    justify-content: end;
+}
+
+.reset_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset_icon>svg{
+    font-size: 50px;
+    color: rgb(16, 6, 32);
+    animation: rotate 4s linear infinite ;
+}
+
+@keyframes rotate {
+    form{
+       transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+

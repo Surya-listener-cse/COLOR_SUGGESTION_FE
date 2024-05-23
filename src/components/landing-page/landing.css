@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+/* font-family: "Butterfly Kids", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Butterfly+Kids&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Signika:wght@300..700&display=swap');
+/* font-family: "Merriweather", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/* font-family: "Concert One", sans-serif; */
+
+
+/* Topbar */
+.topbar{
+    min-height: 90px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    top: 0;
+    position: sticky !important;
+    z-index: 100;
+}
+.brand>span{
+    font-family: "Butterfly Kids", "cursive" , serif;
+    font-size: 40px;
+    color: palevioletred;
+
+}
+.justify-end{
+    display: flex;
+   justify-items: end;
+}
+.space-between{
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-between;
+}
+.nav-text{
+    justify-content: center;
+    align-items: center;
+}
+.nav-text>a{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.nav-text>a:hover{
+    opacity: 1;   
+
+}
+.login-button{
+    border: 1px groove orangered;
+    padding: 5px 15px 5px 15px !important;
+    border-radius: 10px;
+    color: orangered !important;
+    background-color: white ;
+    opacity: 1 !important;
+    cursor: pointer;
+}
+.login-button:hover{
+    background-color: orangered;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px gray;
+    color: white !important;
+}
+
+/* About */
+
+.about{
+    min-height: 60vh;
+    background-image: url("https://img.freepik.com/premium-photo/empty-room-featuring-light-turquoise-wall-warm-wooden-flooring_818261-7871.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-content-div>p{
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+    color: red;
+    text-shadow: 1px 1px 1px yellow;
+    font-size: 30px;
+}
+.about-content-div>p>span{
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+    color: yellow;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px orangered;
+}
+.about-content-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    padding: 10px;
+    margin: 10px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px ;
+}
+.about-content-div>button{
+    border-radius: 5px;
+    padding: 5px;
+    backface-visibility: visible;
+    color: black;
+    font-weight: 900;
+    background-color: gray;
+    box-shadow: 0px 0px 5px white;
+}
+
+
+/* Services  */
+
+.services{
+    font-family: "Merriweather", serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.service-heading{
+    text-align: center;
+   
+}
+.service-heading>h6{
+    color: gray;
+    font-weight: 800 !important;
+}
+.service-heading>h6>span{
+    color: orangered;
+}
+.service-heading>h3>span{
+    color: orangered;
+    
+}
+.service-heading>h3{
+    font-weight: 800 !important;
+}
+.service-container{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 30px;
+}
+.service{
+    width: 350px;
+}
+.service-icon>svg{
+    font-size: 90px;
+    color: white;
+}
+.service-icon{
+    border: 1px solid black;
+    background: linear-gradient(90deg, rgba(9,121,116,1) 47%, rgba(0,235,255,1) 100%);
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 10px;
+}
+.service>h5{
+    color: gray;
+    font-weight: 800;
+}
+.service>small{
+    color: rgb(61, 95, 179);
+    cursor: pointer;
+}
+.service>p{
+    font-size: 14px;
+}
+
+/* Community  */
+
+.community{
+    font-family: "Merriweather", serif;
+    display: flex;
+    margin: 30px;
+    margin-top: 50px;
+    min-height: 50vh;
+    flex-direction: column;
+}
+.community-heading>h3{
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+.community-heading>h3>span{
+    color: orangered;
+}
+.community-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.community-profile{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.profile1{
+    background-image: url("https://media.istockphoto.com/id/1317804578/photo/one-businesswoman-headshot-smiling-at-the-camera.jpg?s=612x612&w=0&k=20&c=EqR2Lffp4tkIYzpqYh8aYIPRr-gmZliRHRxcQC5yylY=");
+    background-size: cover;
+    background-position: center;
+}
+.profile3{
+    background-image: url("https://media.istockphoto.com/id/1154642632/photo/close-up-portrait-of-brunette-woman.jpg?s=612x612&w=0&k=20&c=d8W_C2D-2rXlnkyl8EirpHGf-GpM62gBjpDoNryy98U=");
+    background-size: cover;
+    background-position: center;
+}
+.profile2{
+    background-image: url("https://www.shutterstock.com/image-photo/head-shot-portrait-satisfied-smiling-260nw-1805432410.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.profile4{
+    background-image: url("https://www.perfocal.com/blog/content/images/size/w960/2021/01/Perfocal_17-11-2019_TYWFAQ_100_standard-3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.community-container>p{
+    display: block;
+}
+
+/* Testimonial  */
+
+.testimonials{
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, rgba(48,208,200,1) 40%, rgba(25,90,86,1) 100%);
+    font-family: sans-serif;
+}
+.testimonial-page{
+    margin-top: 50px;
+}
+.testimonial-page>h1{
+    text-align: center;
+    font-family: "Merriweather", serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container{
+    max-width: 950px;
+}
+.card{
+    border-radius: 1rem;
+    box-shadow: 0px -10px 0px rgb(151, 248, 6);
+}
+@media(max-width:767px){
+    .card{
+        margin: 1rem 0.7rem 1rem;
+        max-width: 80vw;
+    }
+}
+
+.testimonial-image{
+    height: 100px !important;
+    width: 100px !important;
+    border-radius: 5rem;
+    margin: 1.3rem auto 1rem auto;
+
+}
+
+.col-md-4{
+    padding:0  0.5rem;
+}
+.card-title{
+    font-size: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-family: 'IM Fell French Canon SC';
+}
+.card-text{
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: 15px;
+    color: rgb(82, 81, 81);
+    line-height: 1.4rem;
+}
+.footer{
+    border-top: none;
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.2rem;
+    padding: 2rem 0 1.4rem 0;
+    font-family: 'Varela Round';
+}
+#name{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+#position{
+    font-size: 0.7rem;
+}
+
+/* Contact-Us  */
+.contact-us{
+    margin-top: 50px;
+    font-family: "Merriweather", serif;
+    font-weight: 600;
+    color: gray;
+    min-height: 30vh;
+}
+.footer-brand{
+    font-weight: 800;
+    color: black;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.contact-container>div>h6{
+    color: black;
+    font-weight: 600;
+}
+.address{
+    cursor: pointer;
+}
+.quick-links{
+    cursor: pointer;
+}
+.quick-links>small:hover{
+    color: rgb(21, 111, 207);
+    text-decoration: underline;
+}
+.follow>div{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   cursor: pointer;
+}
+.follow>div>svg:hover{
+    color: blue;
+    transition: 200ms ease;
+    transform: scale(1.1);
+}
+
+
